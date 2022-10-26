@@ -58,5 +58,20 @@ def count_positives_sum_negatives(arr):
             sum_negative += x
             print(sum_negative)
     return [nb_positive, sum_negative]
+
+#Exo 7 Voir dans une liste qui est le chiffre le plus grand et le plus petit (negatif compris)
+def minimum(arr):
+    mini = min(arr)
+    print(mini)
+    return mini
+        
+def maximum(arr):
+    maxi = max(arr)
+    print(maxi)
+    return maxi
     
-    
+#Exo 8, remplacer des espaces 
+def no_space(x):
+    result = x.replace(" ","")
+    print(result)
+    return result
