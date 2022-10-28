@@ -75,3 +75,28 @@ def no_space(x):
     result = x.replace(" ","")
     print(result)
     return result
+
+#Exo 9, Pierre Feuille Ciseaux (pas reussit à 100%)
+def rps(p1, p2):
+    beats = {'rock': 'scissors', 'scissors': 'paper', 'paper': 'rock'}
+    if beats[p1] == p2:
+        return "Player 1 won!"
+    if beats[p2] == p1:
+        return "Player 2 won!"
+    return "Draw!"
+
+#Exo 10 Mettre des nombres positif en negatif et vice versa 
+def opposite(number):
+  # your solution here
+    if number > 0:
+        opposite_pos = (number - (number + number))
+        print(opposite_pos)
+        return opposite_pos
+    
+    if number < 0:
+        opposite_neg = (number - (number + number))
+        print(opposite_neg)
+        return opposite_neg
+    
+    if number == 0:
+        return 0
