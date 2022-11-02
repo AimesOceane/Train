@@ -3,32 +3,32 @@
 
 import random
 
-def lancer_des():
-    lancer = int(input("Nombre de des lancer : ")) 
-    des = []
-    for i in range(lancer):
-        de = random.randint(1, 20)
-        des.append(de)
-    print(des)
+def dice_roll():
+    roll = int(input("Number of dice roll : ")) 
+    dice = []
+    for i in range(roll):
+        value = random.randint(1, 20)
+        dice.append(value)
+    print(dice)
 
-    for x in des:
+    for x in dice:
         if x == 1:
-            print("Echec Critique")
+            print("Critical Failure")
         if 2 <= x <= 11:
-            print("Moyen")
+            print("Medium")
         if 11 <= x < 20:
-            print("Reussite")
+            print("Success")
         if x == 20:
-            print("Reussite Critique")
-lancer_des()
+            print("Critical Success")
+dice_roll()
 
 #Algo qui prend en Input le nombre de des voulut ainsi que le nombre de fois qu'on le lance qui fait une liste puis les regroupe en une seule liste
 #Enleve la valeur la plus petite et fait une somme total des dés 
 
 def roll():
-    nb_dice = 4
+    nb_dice = int(input("Number of dice : "))
     sum_dice = []
-    nb_roll = 6
+    nb_roll = int(input("Number of dice roll : "))
 
     for i in range(nb_roll):
         dice = [random.randint(1, 6) for x in range(nb_dice)]
