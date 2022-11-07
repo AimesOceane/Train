@@ -87,7 +87,6 @@ def rps(p1, p2):
 
 #Exo 10 Mettre des nombres positif en negatif et vice versa 
 def opposite(number):
-  # your solution here
     if number > 0:
         opposite_pos = (number - (number + number))
         print(opposite_pos)
